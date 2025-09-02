@@ -1,2 +1,9 @@
 .env
 env
+/instance/
+*.pyc
+__pycache__/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
