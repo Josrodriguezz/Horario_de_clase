@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.sidebar {
+    background-color: var(--dark-color);
+    color: white;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px 20px;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.schedule-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.class-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.class-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.class-type-normal {
+    border-left: 4px solid #2ecc71;
+}
+
+.class-type-virtual {
+    border-left: 4px solid #3498db;
+}
+
+.class-type-biweekly {
+    border-left: 4px solid #e74c3c;
+}
+
+.calendar-day {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.calendar-day:hover {
+    background-color: #f0f0f0;
+}
+
+.has-class {
+    background-color: rgba(46, 204, 113, 0.2);
+    font-weight: bold;
+}
+
+.biweekly-class {
+    background-color: rgba(231, 76, 60, 0.2);
+}
+
+.today {
+    background-color: rgba(52, 152, 219, 0.3);
+    border: 2px solid var(--secondary-color);
+}
+
+.subject-color-1 { background-color: rgba(46, 204, 113, 0.1); }
+.subject-color-2 { background-color: rgba(155, 89, 182, 0.1); }
+.subject-color-3 { background-color: rgba(52, 152, 219, 0.1); }
+.subject-color-4 { background-color: rgba(241, 196, 15, 0.1); }
+.subject-color-5 { background-color: rgba(230, 126, 34, 0.1); }
+.subject-color-6 { background-color: rgba(231, 76, 60, 0.1); }
+
+.notes-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.schedule-item {
+    border-left: 4px solid var(--secondary-color);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.delete-btn {
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos adicionales para las páginas de autenticación */
+.login-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.input-group-text {
+    background-color: var(--light-color);
+    border: 1px solid #ced4da;
+}
+
+/* Estilos para la página de inicio */
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Mejoras responsivas */
+@media (max-width: 768px) {
+    .login-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
